@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("bg-intro-desktop.png");
+    font-family: "poppins", sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+main {
+    width: 1440px;
+}
+
+h1 {
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 700;
+    font: 48px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+}
+
+.description-container {
+    position: relative;
+    left: -50px;
+}
+
+.content-text {
+    color: #fff;
+    padding-top: 25px;
+    font-weight: 400;
+}
+
+.sub-container {
+    padding: 10px 150px 10px 150px;
+}
+
+.sub-content {
+    padding-bottom: 20px;
+}
+
+.btn-subcription {
+    border: none;
+    color: #fff;
+    background-color: hsl(248, 32%, 49%);
+    padding: 18px 120px;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    position: relative;
+    left: -130px;
+    box-shadow: 0 7px 1px rgba(0, 0, 0, 0.124);
+}
+
+.btn-subcription span {
+    font-weight: 600;
+}
+
+.form-container {
+    width: 60%;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    position: relative;
+    left: 40px;
+    top: -30px;
+}
+
+input {
+    width: 100%;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #444;
+    border: 1px solid hsl(246, 25%, 77%);
+    position: relative;
+    left: -20px;
+}
+
+input::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input:focus {
+    border: none;
+    outline: 1px solid hsl(248, 32%, 49%);
+}
+
+.trial-container {
+    padding-top: 10px;
+}
+
+.btn-trial {
+    padding: 20px 30px;
+    border-radius: 2%;
+    color: #fff;
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    box-sizing: 0 4px 1px hsla(154, 93%, 0, 0.815);
+}
+
+.btn-trial:hover {
+    background-color: hsla(154, 93%, 35%, 0.815);
+}
+
+.footer {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+.footer2 {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 600px) {
+    body {
+        background-image: url("bg-intro-mobile.png");
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 25px;
+    }
+    h1,
+    .content-text {
+        width: 100%;
+        text-align: center;
+    }
+    h1,
+    .content-text {
+        font-size: 40px;
+    }
+    .content-text p {
+        font-size: 20px;
+    }
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        padding: 15px;
+    }
+    .content-text h1 {
+        font-size: 32px;
+        font-size: 16px;
+    }
+}
+
+.sub-content {
+    padding: 13px 50px;
+    font-size: 14px;
+}
+
+.form-container {
+    padding: 15px;
+}
